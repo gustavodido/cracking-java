@@ -36,5 +36,4 @@ public class MakingAnagramsTest extends InOutTest {
     public void shouldSolveExerciseForFirstCaseInput() {
         solve(INPUT_CASE1, OUTPUT_CASE1, exercise);
     }
-
 }
