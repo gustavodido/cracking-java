@@ -5,6 +5,8 @@ import common.TypedExercise;
 
 import static java.lang.System.out;
 
+// https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
+
 @SuppressWarnings("SimplifiableIfStatement")
 class TreesIsBinarySearchTree implements TypedExercise<Node> {
     public void solve(Node root) {

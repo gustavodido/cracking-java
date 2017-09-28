@@ -9,6 +9,8 @@ import java.util.Scanner;
 import static java.lang.Math.abs;
 import static java.lang.System.out;
 
+// https://www.hackerrank.com/challenges/ctci-making-anagrams
+
 class MakingAnagrams implements Exercise {
 
     private Map<Character, Integer> buildCharFrequencyFor(String sentence) {

@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 import static java.lang.System.out;
 
+// https://www.hackerrank.com/challenges/ctci-array-left-rotation
+
 class ArraysLeftRotation implements Exercise {
     public void solve() {
         Scanner scanner = new Scanner(System.in);
