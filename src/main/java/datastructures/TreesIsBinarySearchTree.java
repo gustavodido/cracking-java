@@ -1,6 +1,6 @@
 package datastructures;
 
-import common.Node;
+import common.TreeNode;
 import common.TypedExercise;
 
 import static java.lang.System.out;
@@ -8,22 +8,22 @@ import static java.lang.System.out;
 // https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
 
 @SuppressWarnings("SimplifiableIfStatement")
-class TreesIsBinarySearchTree implements TypedExercise<Node> {
-    public void solve(Node root) {
+class TreesIsBinarySearchTree implements TypedExercise<TreeNode> {
+    public void solve(TreeNode root) {
         boolean isBinarySearchTree = isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
         out.println(isBinarySearchTree ? "Yes" : "No");
     }
 
-    private boolean isBinarySearchTree(Node node, int minValue, int maxValue) {
-        if (node == null) {
+    private boolean isBinarySearchTree(TreeNode treeNode, int minValue, int maxValue) {
+        if (treeNode == null) {
             return true;
         }
 
-        if (node.data <= minValue || node.data >= maxValue) {
+        if (treeNode.data <= minValue || treeNode.data >= maxValue) {
             return false;
         }
 
-        return isBinarySearchTree(node.left, minValue, node.data) &&
-                isBinarySearchTree(node.right, node.data, maxValue);
+        return isBinarySearchTree(treeNode.left, minValue, treeNode.data) &&
+                isBinarySearchTree(treeNode.right, treeNode.data, maxValue);
     }
 }

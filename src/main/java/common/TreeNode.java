@@ -1,16 +1,16 @@
 package common;
 
 // Given code
-public class Node {
+public class TreeNode {
     public int data;
-    public Node left;
-    public Node right;
+    public TreeNode left;
+    public TreeNode right;
 
-    public Node(int data) {
+    public TreeNode(int data) {
         this.data = data;
     }
 
-    public Node(int data, Node left, Node right) {
+    public TreeNode(int data, TreeNode left, TreeNode right) {
         this.data = data;
         this.left = left;
         this.right = right;

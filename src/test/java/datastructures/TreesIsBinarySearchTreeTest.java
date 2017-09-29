@@ -1,14 +1,14 @@
 package datastructures;
 
 import common.InOutTest;
-import common.Node;
+import common.TreeNode;
 import common.TypedExercise;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TreesIsBinarySearchTreeTest extends InOutTest {
-    private TypedExercise<Node> exercise = new TreesIsBinarySearchTree();
+    private TypedExercise<TreeNode> exercise = new TreesIsBinarySearchTree();
 
     private static final String OUTPUT_SAMPLE0 = "Yes\n";
 
@@ -17,14 +17,14 @@ public class TreesIsBinarySearchTreeTest extends InOutTest {
     @Test
     public void shouldSolveExerciseForFirstTestInput() {
         // 1 2 3 4 5 6 7
-        Node root =
-                new Node(4,
-                        new Node(2,
-                                new Node(1),
-                                new Node(3)),
-                        new Node(6,
-                                new Node(5),
-                                new Node(7)));
+        TreeNode root =
+                new TreeNode(4,
+                        new TreeNode(2,
+                                new TreeNode(1),
+                                new TreeNode(3)),
+                        new TreeNode(6,
+                                new TreeNode(5),
+                                new TreeNode(7)));
 
 
         exercise.solve(root);
@@ -35,14 +35,14 @@ public class TreesIsBinarySearchTreeTest extends InOutTest {
     @Test
     public void shouldSolveExerciseForFirstTestCase() {
         // 1 2 4 3 5 6 7
-        Node root =
-                new Node(3,
-                        new Node(2,
-                                new Node(1),
-                                new Node(4)),
-                        new Node(6,
-                                new Node(5),
-                                new Node(7)));
+        TreeNode root =
+                new TreeNode(3,
+                        new TreeNode(2,
+                                new TreeNode(1),
+                                new TreeNode(4)),
+                        new TreeNode(6,
+                                new TreeNode(5),
+                                new TreeNode(7)));
 
 
         exercise.solve(root);
