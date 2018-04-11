@@ -30,5 +30,4 @@ public class SortingBubbleSortTest extends InOutTest {
     public void shouldSolveExerciseForSecondTestInput() {
         solve(INPUT_SAMPLE1, OUTPUT_SAMPLE1, exercise);
     }
-
 }
